@@ -12,7 +12,6 @@
 
 import SwiftUI
 import PhoneNumberKit
-import NativeFont
 #if canImport(AppKit)
 import AppKit
 public typealias UIFont = NSFont

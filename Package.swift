@@ -16,9 +16,6 @@ let package = Package(
         .library(
             name: "iPhoneNumberField",
             targets: ["iPhoneNumberField"]),
-        .library(
-            name: "NativeFont",  // Add this line
-            targets: ["NativeFont"]),  // Add this line
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -28,10 +25,6 @@ let package = Package(
         .target(
             name: "iPhoneNumberField",
             dependencies: ["PhoneNumberKit"]
-        ),
-        .target(
-            name: "NativeFont",
-            path: "Sources/NativeFont"  // Specify the path to the source files
         ),
     ]
 )
