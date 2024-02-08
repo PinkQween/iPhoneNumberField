@@ -12,6 +12,12 @@
 
 import SwiftUI
 import PhoneNumberKit
+import NativeFont
+#if canImport(AppKit)
+import AppKit
+public typealias UIFont = NSFont
+public typealias UIFontDescriptor = NSFontDescriptor
+#endif
 
 /// A text field view representable structure that formats the user's phone number as they type.
 public struct iPhoneNumberField: UIViewRepresentable {
